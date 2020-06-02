@@ -17,7 +17,7 @@ describe('AuthenticateUser', () => {
       fakeHashProvider
     );
 
-    await createUser.execute({
+    const user = await createUser.execute({
       name: 'john doe',
       email: 'johndoe@example.com',
       password: '123456',
@@ -29,5 +29,6 @@ describe('AuthenticateUser', () => {
     });
 
     expect(response).toHaveProperty('token');
+    expect(response.user).toEqual(user);
   });
 });
