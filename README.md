@@ -39,12 +39,15 @@
   **Functional requirements**
 
     - The provider must be able to list his own appointments in a specific day;
-    - The provider must be able to recive an notification whenever a new appointment is registered;
-    - The provider must be able to see his own unread notifications
+    - The provider must be able to recive an notification whenever a new ;appointment is registered;
+    - The provider must be able to see his own unread notifications;
 
   **Not functional requirements**
 
-    - The provider appointments must be stored in cache
+    - The provider appointments must be stored in cache;
+    - The provider notifications must be stored in a non relational database(MongoDB);
+    -The provider notifications must be sended in realtime using socket.io;
+
 
 
   **Business rules**
