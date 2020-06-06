@@ -11,6 +11,8 @@ import UsersRepository from '@modules/users/infra/typeorm/repositories/UsersRepo
 
 // import IMailProvider from './providers/MailProvider/models/IMailProvider';
 
+// import ITokenUsersRepository from '@modules/users/repositories/IUserTokensRepository'
+
 container.registerSingleton<IAppointmentsRepository>(
   'AppointmentsRepository',
   AppointmentsRepository
